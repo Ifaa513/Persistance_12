@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="93f5677a-4de7-4b10-ba7d-4be111f5f038">
+	<property name="ireport.zoom" value="1.331000000000004"/>
+	<property name="ireport.x" value="160"/>
+	<property name="ireport.y" value="0"/>
+	<style name="table">
+		<box>
+			<pen lineWidth="1.0" lineColor="#660000"/>
+		</box>
+	</style>
+	<style name="table_TH" mode="Opaque" backcolor="#8FCCCC">
+		<box>
+			<pen lineWidth="0.5" lineColor="#660000"/>
+		</box>
+	</style>
+	<style name="table_CH" mode="Opaque" backcolor="#CFE6E6">
+		<box>
+			<pen lineWidth="0.5" lineColor="#660000"/>
+		</box>
+	</style>
+	<style name="table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#660000"/>
+		</box>
+	</style>
+	<subDataset name="Table Dataset 1" uuid="c085145a-291d-43ee-8c98-80c7e0921ae1"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT * FROM matakuliah]]>
+	</queryString>
+	<field name="kodemk" class="java.lang.String"/>
+	<field name="namamk" class="java.lang.String"/>
+	<field name="sks" class="java.lang.Integer"/>
+	<field name="semesterajar" class="java.lang.Integer"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="83" splitType="Stretch">
+			<staticText>
+				<reportElement x="147" y="12" width="279" height="31" uuid="e5fbe247-f0df-4aca-b852-980364734369"/>
+				<textElement textAlignment="Center">
+					<font fontName="Lucida Bright" size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[DATA MATA KULIAH MAHASISWA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="102" y="43" width="359" height="17" uuid="e453edec-f6b6-4572-847d-0c4ec7fae4b1"/>
+				<textElement textAlignment="Center">
+					<font fontName="Lucida Bright" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Program Studi Sistem Informasi]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="102" y="60" width="359" height="17" uuid="a0dd69bc-cd5b-44be-8e77-b05f38451549"/>
+				<textElement textAlignment="Center">
+					<font fontName="Lucida Bright" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Tahun akademik 2024/2025]]></text>
+			</staticText>
+			<image>
+				<reportElement x="45" y="0" width="89" height="83" uuid="022a2bd0-3a6a-41b6-a742-30766e0a5fff"/>
+				<imageExpression><![CDATA["C:\\Users\\USER\\Pictures\\Screenshots\\UTS\\UIN Sunan Ampel Logo (KoleksiLogo.com).png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="447" y="0" width="79" height="83" uuid="0a94a244-e5be-465f-9fcc-b201bd7dd6b0"/>
+				<imageExpression><![CDATA["C:\\Users\\USER\\Documents\\Tugas Basdat Sem.2\\LOGO HIMAPROSIF.png"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="15" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="30" splitType="Stretch">
+			<rectangle>
+				<reportElement x="16" y="0" width="149" height="28" forecolor="#FFFFFF" backcolor="#930B1B" uuid="ffd1728e-fee7-4016-af11-7622d24c1cd6"/>
+				<graphicElement fill="Solid"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="326" y="0" width="100" height="28" forecolor="#FFFFFF" backcolor="#B9B27A" uuid="6ecb7baf-fb89-4ddf-858e-60d0206c7cb7"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="165" y="0" width="161" height="28" forecolor="#FFFFFF" backcolor="#B9B27A" uuid="d9260e5e-485d-4c51-bfd9-638553955f22"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="426" y="0" width="100" height="28" forecolor="#FFFFFF" backcolor="#FAF1A8" uuid="088c8390-2b56-426c-8c5d-5b37e2bc598d"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="165" y="5" width="161" height="20" forecolor="#FFFFFF" uuid="194f70f7-b8fe-47f0-a382-e8e0f81e3f52"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Lucida Bright" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Mata Kuliah]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="326" y="5" width="100" height="20" forecolor="#FFFFFF" uuid="9d7a20ab-9a0b-4a1a-b63f-3d3979d6652f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Lucida Bright" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[SKS]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="426" y="5" width="100" height="20" forecolor="#934F3E" uuid="77e87980-8121-41cf-b2ca-e5e18e65aa9e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Lucida Bright" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Semester]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="27" y="5" width="138" height="20" forecolor="#FFFFFF" uuid="b060d65f-5938-4c7e-b9ef-b75f8f3df222"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Lucida Bright" size="14" isBold="true" isPdfEmbedded="false"/>
+				</textElement>
+				<text><![CDATA[Kode Mata Kuliah]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="21" splitType="Stretch">
+			<rectangle>
+				<reportElement x="16" y="0" width="149" height="20" forecolor="#FFFFFF" backcolor="#EF7A65" uuid="1f3e6056-f46e-4693-af71-110a84d89053"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="165" y="0" width="161" height="20" forecolor="#FFFFFF" backcolor="#FAF5DA" uuid="6336cc38-3c3f-4a03-856f-5c85b5c942f7"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="326" y="0" width="100" height="20" forecolor="#FFFFFF" backcolor="#FAF5DA" uuid="1280755b-5264-40c6-a306-81255ad07332"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="426" y="0" width="100" height="20" forecolor="#FFFFFF" backcolor="#FAF1A8" uuid="d331e2d3-40bf-470e-a852-f554c14db90d"/>
+			</rectangle>
+			<textField>
+				<reportElement x="27" y="0" width="138" height="20" forecolor="#FFEAF2" uuid="dc7e5bcd-f9ba-45cf-8b7c-791dade967a0"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{kodemk}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="175" y="0" width="151" height="20" uuid="c68fb02f-9779-4a05-b209-0eb94168feee"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{namamk}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="326" y="0" width="100" height="20" backcolor="#FAF5DA" uuid="d65beaf1-4332-4b4e-b56f-c997f065c036"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{sks}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="426" y="0" width="100" height="20" forecolor="#934F3E" uuid="1e9f4e9b-26ac-4043-8950-a0cf3ebee66c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{semesterajar}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="57" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
